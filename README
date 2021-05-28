@@ -1,0 +1,126 @@
+                             Instrucciones
+
+
+
+1.- Ejecutar el siguiente comando: npm i
+
+                  A continuación arrancamos con el comando: npm run dev
+
+2.- Introducir la siguiente dirección en el navegador:
+
+                             http://localhost:9000/api/movies
+
+3.- Abrir la aplicación Postman:
+
+       * Nos dirigimos a: + nueva pestaña
+
+                         
+                         
+                             ¿Como mostrar las peliculas?
+
+   * Introducimos la siguiente dirección nuevamente: http://localhost:9000/api/movies
+
+   * Elegiremos el primer método "GET", presionamos "Send"
+
+ obtendremos nuestros datos almacenados
+
+                         
+                         
+                         ¿Como añadir una nueva pelicula?
+
+    * Con la misma dirección elegiremos el método "POST"
+
+    * Solo hacemos 2 configuraciones en el "Header"
+
+    * En el "Key" seleccionamos la opción "Content-Type", ahora en "Value" le otorgamos:
+        "application/json"
+
+    * Por último nos dirigimos al apartado "Body" y seleccionamos "Raw"
+
+    * Ahora agregamos una nueva de esta manera:
+
+          Ejemplo:
+
+                  {
+                      "title": "Los olvidados",
+                      "director": "Luis Buñuel",
+                      "year": "1950",
+                      "rating": "8.3"
+                  }
+
+                                       El "ID" se generará automáticamente
+
+    * Damos click en "Send"
+                        
+                        
+                        
+                        
+                         ¿Como eliminar una pelicula?
+                         
+      
+      * Seleccionamos el metodo "DELETE" 
+      
+      * Agramos el "ID" de la pelicula que deseamos eliminar de esta manera:
+      
+            http://localhost:9000/api/movies/3   
+            
+         Ejemplo:
+         
+         
+                  {
+                      "title": "Los olvidados",
+                      "director": "Luis Buñuel",
+                      "year": "1950",
+                      "rating": "8.3",
+                      "id": 3
+                  }
+      
+       * Solo presionamos "Send" y listo.
+       
+        
+       
+                       ¿Como actualizo una pelicula?
+                       
+             Es similar al metodo "DELET"          
+                       
+       * Escojemos el metodo "PUT"                     
+                               
+       * Seleccionamos el "ID" de nuestra pelicula:                  
+
+
+            http://localhost:9000/api/movies/1
+
+      
+       
+       
+             {
+               "id": "1",
+               "title": "Labyrinth",
+               "director": "Jim Henson",
+               "year": "1986",
+               "rating": "7.4"
+             }                                                
+             
+         * Presionamos  "Send" y se realizara de la siguiente manera:     
+             
+              {
+                "id": "1",
+                "title": "Dollar",
+                "director": "David Bowie",
+                "year": "2003",
+                "rating": "6.0"
+              }
+
+
+NOTA: los cambios realizados solo se procesaran en memoria, no modificara su archivo principal, en caso de errores verifique su petición.
+
+
+           
+
+
+
+       
+            
+       
+         
+           
