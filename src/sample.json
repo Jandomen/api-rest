@@ -1,0 +1,16 @@
+[
+    {
+        "id": "1",
+        "title": "Hostel",
+        "director": "Eli Roth",
+        "year": "2005",
+        "rating": "5.4"
+    },
+    {
+        "id": "2",
+        "title": "Labyrinth",
+        "director": "Jim Henson",
+        "year": "1986",
+        "rating": "7.4"
+    }
+]
